@@ -1,0 +1,58 @@
+Ejercicio propuesto: Bordes personalizados
+En el siguiente ejemplo hemos utilizado varios métodos abreviados y largos para diseñar los bordes. 
+Crea una nueva página web con ese código y combina las diferentes propiedades para comprobar cómo funcionan.
+Finalmente, añade tres cajas más y configura los estilos de borde como más te guste.
+
+
+.caja1 {
+  border-top: 5px dotted green;
+  border-right: 5px dashed orange;
+  border-bottom: 5px dotted red;
+  border-left: 5px dashed blue;
+  padding: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  ...
+}
+.caja2 {
+  border: 5px solid black;
+  border-left-width: 10px;
+  border-right-width: 10px;
+  border-top-color: aqua;
+  border-bottom-color: pink;
+  padding: 15px;
+  text-align: center;
+  ...
+}
+.caja3 {
+  border: 2px solid black;
+  padding: 10px;
+  ...
+}
+...
+<div class="caja1">Esta es una caja con diferentes tipos de bordes</div>
+<div class="caja2">Esta es otra caja con diferentes tipos de bordes</div>
+<div class="caja1">
+  <div class="caja2">Esta es una caja con diferentes tipos de bordes dentro de otra caja</div>
+</div>
+<div class="caja3">
+  <div class="caja3">
+    <div class="caja3">
+      <div class="caja3">
+        <div class="caja3">
+          <div class="caja3">
+            Estas son cajas dentro de cajas
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+...
+
+Esta es una caja con diferentes tipos de bordes
+Esta es otra caja con diferentes tipos de bordes
+Esta es una caja con diferentes tipos de bordes dentro de otra caja
+Estas son cajas dentro de cajas
+…
