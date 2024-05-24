@@ -1,0 +1,7 @@
+Ejercicio propuesto: Jugando con el modelo de cajas
+
+En el ejemplo siguiente puedes ver dos cajas. Ambas tienen una clase definida en CSS que establece los valores de las propiedades
+width, height, margin, border y padding. 
+Utilizando ese código, crea una página web con cinco cajas diferentes, cada una con diferentes estilos.
+Tienes que cambiar también el color del texto (puedes elegir los colores que más te gusten).
+Y finalmente añade algunas sombras al texto usando diferentes estilos y colores.
