@@ -19,3 +19,41 @@
     flex-basis: 100px; /* Tamaño base de los elementos */
     align-self: center; /* Alinea cada elemento individualmente en el centro del eje transversal */
 }
+/* Media Queries */
+
+/* Móvil */
+@media screen and (max-width: 600px) {
+    .flex-container {
+        flex-direction: column; /* Los elementos se organizan en una columna */
+        height: auto; /* Altura del contenedor se ajusta automáticamente */
+        background-color: blue;
+    }
+
+    .flex-item {
+        flex-basis: auto; /* Tamaño base de los elementos se ajusta automáticamente */
+        width: 100%; /* Los elementos ocupan el 100% del ancho del contenedor */
+        text-align: center; /* Texto centrado */
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .flex-container {
+        justify-content: space-between; /* Espacio entre los elementos */
+    }
+
+    .flex-item {
+        flex-basis: 45%; /* Tamaño base de los elementos ocupa el 45% del ancho del contenedor */
+    }
+}
+
+/* Escritorio */
+@media screen and (min-width: 901px) {
+    .flex-container {
+        justify-content: space-around; /* Espacio alrededor de cada elemento */
+    }
+
+    .flex-item {
+        flex-basis: 100px; /* Tamaño base de los elementos vuelve a 100px */
+    }
+}
