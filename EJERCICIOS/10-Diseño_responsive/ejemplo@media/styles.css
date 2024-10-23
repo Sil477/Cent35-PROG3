@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.header-section .header-box {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.content-section .title-box {
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+.cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cards-section .card-box {
+    background-color: lightcoral;
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 10px); /* Por defecto, cada tarjeta ocupa un tercio del ancho disponible */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.footer-section .footer-box {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Media Queries */
+
+/* Móvil */
+@media (max-width: 600px) {
+    .cards-section .card-box {
+        flex: 1 1 calc(100% - 10px); /* En pantallas pequeñas, cada tarjeta ocupa el 100% del ancho disponible */
+    }
+}
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+    .cards-section .card-box {
+        flex: 1 1 calc(50% - 10px); /* En pantallas medianas, cada tarjeta ocupa el 50% del ancho disponible */
+    }
+}
+
+/* Escritorio */
+@media (min-width: 901px) {
+    .cards-section .card-box {
+        flex: 1 1 calc(33.333% - 10px); /* En pantallas grandes, cada tarjeta ocupa un tercio del ancho disponible */
+    }
+}

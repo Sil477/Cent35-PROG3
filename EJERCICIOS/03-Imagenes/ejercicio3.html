@@ -1,0 +1,42 @@
+<!-- Crea un nuevo documento HTML siguiendo estas especificaciones:
+Debe estar dividido en tres secciones (utiliza la etiqueta <section>).
+Requisitos para la primera sección:
+Incluye un título (<h1>) con el texto "Uso de imágenes".
+Añade una imagen de tu videojuego favorito.
+Requisitos para la segunda sección:
+Incluye un título (<h1>) con el texto "Uso de vídeos".
+Descarga cualquier vídeo de YouTube.
+Incluye una etiqueta <video> que reproduzca el vídeo descargado.
+El vídeo debe mostrar los controles, reproducirse automáticamente y en bucle, pero debe estar inicialmente silenciado.
+Requisitos para la tercera sección:
+Incluye un título (<h1>) con el texto "Uso de audios".
+Descarga cualquier audio de una canción de YouTube.
+Incluye una etiqueta <audio> que reproduzca el audio descargado.
+El audio debe mostrar los controles, reproducirse automáticamente y en bucle.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multimedia HTML</title>
+        <meta charset="UTF-8"/>
+    </head>
+    <body>
+        <div>
+            <h1>Uso de imagenes</h1>
+            <img src="img/skyrim.jpg" alt="Logo de Skyrim" width="300"/>
+        </div>
+        <div>
+            <h1>Uso de vídeos</h1>
+            <video width="500" controls muted autoplay>
+                <source src="img/Arde Bogotá - Big Bang.mp4" type="video/mp4" />
+            </video>
+        </div>
+        <div>
+            <h1>Uso de audios</h1>
+            <audio controls autoplay loop>
+                <source src="img/The Lord of the Rings - Soundtrack - Main theme.mp3" type="audio/mp3" />
+            </audio>
+        </div>
+    </body>
+</html>

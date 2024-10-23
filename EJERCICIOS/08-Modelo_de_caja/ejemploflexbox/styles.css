@@ -1,0 +1,59 @@
+/* Estilo para el contenedor flex */
+.flex-container {
+    display: flex; /* Convierte el contenedor en un contenedor flex */
+    flex-direction: row; /* Los elementos se organizan en una fila */
+    justify-content: space-around; /* Espacio alrededor de cada elemento */
+    align-items: center; /* Alinea los elementos en el centro del eje transversal */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas si es necesario */
+    height: 200px; /* Altura del contenedor */
+    border: 2px solid black; /* Borde del contenedor */
+}
+
+/* Estilo para los elementos flex */
+.flex-item {
+    background-color: lightblue; /* Color de fondo */
+    padding: 10px; /* Espaciado interno */
+    margin: 5px; /* Margen entre los elementos */
+    border: 1px solid blue; /* Borde de los elementos */
+    flex-grow: 1; /* Permite que los elementos crezcan para llenar el espacio disponible */
+    flex-basis: 100px; /* Tamaño base de los elementos */
+    align-self: center; /* Alinea cada elemento individualmente en el centro del eje transversal */
+}
+/* Media Queries */
+
+/* Móvil */
+@media screen and (max-width: 600px) {
+    .flex-container {
+        flex-direction: column; /* Los elementos se organizan en una columna */
+        height: auto; /* Altura del contenedor se ajusta automáticamente */
+        background-color: blue;
+    }
+
+    .flex-item {
+        flex-basis: auto; /* Tamaño base de los elementos se ajusta automáticamente */
+        width: 100%; /* Los elementos ocupan el 100% del ancho del contenedor */
+        text-align: center; /* Texto centrado */
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .flex-container {
+        justify-content: space-between; /* Espacio entre los elementos */
+    }
+
+    .flex-item {
+        flex-basis: 45%; /* Tamaño base de los elementos ocupa el 45% del ancho del contenedor */
+    }
+}
+
+/* Escritorio */
+@media screen and (min-width: 901px) {
+    .flex-container {
+        justify-content: space-around; /* Espacio alrededor de cada elemento */
+    }
+
+    .flex-item {
+        flex-basis: 100px; /* Tamaño base de los elementos vuelve a 100px */
+    }
+}

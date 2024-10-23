@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.header-section .header-box {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.content-section .title-box {
+    background-color: lightgreen;
+    padding: 20px;
+}
+
+.cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cards-section .card-box {
+    background-color: lightcoral;
+    padding: 20px;
+    flex: 1 1 calc(50% - 10px); /* Cada tarjeta ocupa la mitad del ancho disponible, menos el espacio entre ellas */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.footer-section .footer-box {
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+}
+

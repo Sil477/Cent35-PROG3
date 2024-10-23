@@ -1,0 +1,40 @@
+Ejercicio propuesto: Padding personalizado
+
+Si cambias los valores para el relleno de las clases «.caja» del ejemplo siguiente, puedes ver que cambia dónde comienza el texto en relación con la caja.
+También puedes cambiar el relleno en la clase «.contenedor», que ampliará el espacio entre el contenedor y la caja. 
+El área de relleno se puede cambiar para cualquier elemento y aumentará el espacio entre su borde y lo que esté dentro del elemento.
+Crea una página web con el siguiente código y añade tres cuadros más con diferentes rellenos y estilos.
+
+.caja1 {
+  border: 5px solid red;
+  margin: 10px;
+  ...
+}
+.caja2 {
+  border: 5px solid blue;
+  margin: 10px;
+  padding: 25px;
+  ...
+}
+.caja3 {
+  border: 5px solid green;
+  margin: 10px;
+  padding: 50px;
+  ...
+}
+...
+<div class="caja1">
+  Esta es una caja sin relleno
+</div>
+<div class="caja2">
+  Esta es una caja con 25px de relleno
+</div>
+<div class="caja3">
+  Esta es una caja con 50px de relleno
+</div>
+...
+
+Esta es una caja sin relleno
+Esta es una caja con 25px de relleno
+Esta es una caja con 50px de relleno
+Bordes
